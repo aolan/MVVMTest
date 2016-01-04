@@ -11,7 +11,24 @@
 		D57DE8F91C3A08C000A82A0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE8F81C3A08C000A82A0C /* ViewController.m */; };
 		D57DE90F1C3A09ED00A82A0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE90E1C3A09ED00A82A0C /* AppDelegate.m */; };
 		D57DE9141C3A0A4000A82A0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57DE9131C3A0A4000A82A0C /* Assets.xcassets */; };
+		D57DE9161C3A112000A82A0C /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57DE9151C3A112000A82A0C /* ReactiveCocoa.framework */; };
+		D57DE9171C3A112000A82A0C /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D57DE9151C3A112000A82A0C /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D57DE91D1C3A1CE100A82A0C /* MVNavigationControllerStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE91C1C3A1CE100A82A0C /* MVNavigationControllerStack.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D57DE9181C3A112000A82A0C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D57DE9171C3A112000A82A0C /* ReactiveCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D57DE8EE1C3A08C000A82A0C /* MVVMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +39,10 @@
 		D57DE90D1C3A09ED00A82A0C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D57DE90E1C3A09ED00A82A0C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D57DE9131C3A0A4000A82A0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D57DE9151C3A112000A82A0C /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		D57DE91A1C3A125800A82A0C /* MVVMTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MVVMTest-Prefix.pch"; sourceTree = "<group>"; };
+		D57DE91B1C3A1CE100A82A0C /* MVNavigationControllerStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVNavigationControllerStack.h; sourceTree = "<group>"; };
+		D57DE91C1C3A1CE100A82A0C /* MVNavigationControllerStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVNavigationControllerStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D57DE9161C3A112000A82A0C /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				D57DE8F01C3A08C000A82A0C /* MVVMTest */,
+				D57DE9191C3A117E00A82A0C /* FrameWorks */,
 				D57DE8EF1C3A08C000A82A0C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +93,7 @@
 			children = (
 				D57DE9051C3A08C000A82A0C /* Info.plist */,
 				D57DE8F21C3A08C000A82A0C /* main.m */,
+				D57DE91A1C3A125800A82A0C /* MVVMTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -86,6 +110,8 @@
 		D57DE9101C3A0A0100A82A0C /* MVKit */ = {
 			isa = PBXGroup;
 			children = (
+				D57DE91B1C3A1CE100A82A0C /* MVNavigationControllerStack.h */,
+				D57DE91C1C3A1CE100A82A0C /* MVNavigationControllerStack.m */,
 			);
 			path = MVKit;
 			sourceTree = "<group>";
@@ -105,6 +131,14 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		D57DE9191C3A117E00A82A0C /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				D57DE9151C3A112000A82A0C /* ReactiveCocoa.framework */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +149,7 @@
 				D57DE8EA1C3A08C000A82A0C /* Sources */,
 				D57DE8EB1C3A08C000A82A0C /* Frameworks */,
 				D57DE8EC1C3A08C000A82A0C /* Resources */,
+				D57DE9181C3A112000A82A0C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D57DE8F91C3A08C000A82A0C /* ViewController.m in Sources */,
+				D57DE91D1C3A1CE100A82A0C /* MVNavigationControllerStack.m in Sources */,
 				D57DE8F31C3A08C000A82A0C /* main.m in Sources */,
 				D57DE90F1C3A09ED00A82A0C /* AppDelegate.m in Sources */,
 			);
@@ -268,6 +304,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREFIX_HEADER = "MVVMTest/MVVMTest-Prefix.pch";
 				INFOPLIST_FILE = MVVMTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawn.MVVMTest;
@@ -279,6 +320,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREFIX_HEADER = "MVVMTest/MVVMTest-Prefix.pch";
 				INFOPLIST_FILE = MVVMTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawn.MVVMTest;
