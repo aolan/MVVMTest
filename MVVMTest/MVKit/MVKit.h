@@ -10,6 +10,10 @@
 #define MVKit_h
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "RDVTabBarController.h"
+#import "RDVTabBar.h"
+#import "RDVTabBarItem.h"
+
 #import "MVKit_MVConfig.h"
 #import "MVKit_MVConstant.h"
 #import "MVViewModel.h"

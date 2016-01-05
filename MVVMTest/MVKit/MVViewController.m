@@ -51,9 +51,7 @@
 - (void)viewWillDisappear:(BOOL)animated {
     
     [super viewWillDisappear:animated];
-    
-//    [self.viewModel.willDisappearSignal sendNext:nil];
-    
+        
     // Being popped, take a snapshot
     if ([self isMovingFromParentViewController]) {
         self.snapshot = [self.navigationController.view snapshotViewAfterScreenUpdates:NO];
