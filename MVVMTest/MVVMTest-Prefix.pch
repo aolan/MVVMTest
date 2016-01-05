@@ -12,7 +12,7 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
-    #import <ReactiveCocoa/ReactiveCocoa.h>
+    #import "MVKit.h"
 #endif
 
 #endif /* MVVMTest_Prefix_pch */

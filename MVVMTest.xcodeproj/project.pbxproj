@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D50D62021C3B4FCF005C5EE4 /* MVPageDispatchService.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D62011C3B4FCF005C5EE4 /* MVPageDispatchService.m */; };
+		D50D62051C3B522F005C5EE4 /* MVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D62041C3B522F005C5EE4 /* MVNavigationController.m */; };
+		D50D62081C3B6D04005C5EE4 /* TTHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D62071C3B6D04005C5EE4 /* TTHomeViewModel.m */; };
+		D50D620B1C3B6D18005C5EE4 /* TTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D620A1C3B6D18005C5EE4 /* TTHomeViewController.m */; };
+		D50D621B1C3B9A5A005C5EE4 /* TTLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D621A1C3B9A5A005C5EE4 /* TTLoginViewModel.m */; };
+		D50D621E1C3B9CD2005C5EE4 /* TTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D621D1C3B9CD2005C5EE4 /* TTLoginViewController.m */; };
+		D50D62241C3BA571005C5EE4 /* MVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D62231C3BA571005C5EE4 /* MVTabBarController.m */; };
 		D57DE8F31C3A08C000A82A0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE8F21C3A08C000A82A0C /* main.m */; };
-		D57DE8F91C3A08C000A82A0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE8F81C3A08C000A82A0C /* ViewController.m */; };
-		D57DE90F1C3A09ED00A82A0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE90E1C3A09ED00A82A0C /* AppDelegate.m */; };
+		D57DE90F1C3A09ED00A82A0C /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE90E1C3A09ED00A82A0C /* TTAppDelegate.m */; };
 		D57DE9141C3A0A4000A82A0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57DE9131C3A0A4000A82A0C /* Assets.xcassets */; };
 		D57DE9161C3A112000A82A0C /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57DE9151C3A112000A82A0C /* ReactiveCocoa.framework */; };
 		D57DE9171C3A112000A82A0C /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D57DE9151C3A112000A82A0C /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D57DE91D1C3A1CE100A82A0C /* MVNavigationControllerStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE91C1C3A1CE100A82A0C /* MVNavigationControllerStack.m */; };
+		D57DE92E1C3A547D00A82A0C /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57DE92D1C3A547D00A82A0C /* AFNetworking.framework */; };
+		D57DE92F1C3A547D00A82A0C /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D57DE92D1C3A547D00A82A0C /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D57DE9321C3A55B100A82A0C /* MVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE9311C3A55B100A82A0C /* MVViewController.m */; };
+		D57DE9351C3A573800A82A0C /* UINavigationController+MVExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE9341C3A573800A82A0C /* UINavigationController+MVExtensions.m */; };
+		D57DE9381C3A577500A82A0C /* MVViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE9371C3A577500A82A0C /* MVViewModel.m */; };
+		D57DE93B1C3A774C00A82A0C /* MVRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE93A1C3A774C00A82A0C /* MVRouter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +35,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D57DE9171C3A112000A82A0C /* ReactiveCocoa.framework in Embed Frameworks */,
+				D57DE92F1C3A547D00A82A0C /* AFNetworking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,18 +43,40 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D50D62001C3B4FCF005C5EE4 /* MVPageDispatchService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPageDispatchService.h; sourceTree = "<group>"; };
+		D50D62011C3B4FCF005C5EE4 /* MVPageDispatchService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPageDispatchService.m; sourceTree = "<group>"; };
+		D50D62031C3B522F005C5EE4 /* MVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVNavigationController.h; sourceTree = "<group>"; };
+		D50D62041C3B522F005C5EE4 /* MVNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVNavigationController.m; sourceTree = "<group>"; };
+		D50D62061C3B6D04005C5EE4 /* TTHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTHomeViewModel.h; path = ../AppDelegate/TTHomeViewModel.h; sourceTree = "<group>"; };
+		D50D62071C3B6D04005C5EE4 /* TTHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTHomeViewModel.m; path = ../AppDelegate/TTHomeViewModel.m; sourceTree = "<group>"; };
+		D50D62091C3B6D18005C5EE4 /* TTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTHomeViewController.h; path = ../AppDelegate/TTHomeViewController.h; sourceTree = "<group>"; };
+		D50D620A1C3B6D18005C5EE4 /* TTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTHomeViewController.m; path = ../AppDelegate/TTHomeViewController.m; sourceTree = "<group>"; };
+		D50D62191C3B9A5A005C5EE4 /* TTLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLoginViewModel.h; sourceTree = "<group>"; };
+		D50D621A1C3B9A5A005C5EE4 /* TTLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLoginViewModel.m; sourceTree = "<group>"; };
+		D50D621C1C3B9CD2005C5EE4 /* TTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLoginViewController.h; sourceTree = "<group>"; };
+		D50D621D1C3B9CD2005C5EE4 /* TTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLoginViewController.m; sourceTree = "<group>"; };
+		D50D62221C3BA571005C5EE4 /* MVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVTabBarController.h; sourceTree = "<group>"; };
+		D50D62231C3BA571005C5EE4 /* MVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVTabBarController.m; sourceTree = "<group>"; };
 		D57DE8EE1C3A08C000A82A0C /* MVVMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57DE8F21C3A08C000A82A0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D57DE8F71C3A08C000A82A0C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D57DE8F81C3A08C000A82A0C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D57DE9051C3A08C000A82A0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D57DE90D1C3A09ED00A82A0C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D57DE90E1C3A09ED00A82A0C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D57DE90D1C3A09ED00A82A0C /* TTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAppDelegate.h; sourceTree = "<group>"; };
+		D57DE90E1C3A09ED00A82A0C /* TTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAppDelegate.m; sourceTree = "<group>"; };
 		D57DE9131C3A0A4000A82A0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D57DE9151C3A112000A82A0C /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		D57DE91A1C3A125800A82A0C /* MVVMTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MVVMTest-Prefix.pch"; sourceTree = "<group>"; };
-		D57DE91B1C3A1CE100A82A0C /* MVNavigationControllerStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVNavigationControllerStack.h; sourceTree = "<group>"; };
-		D57DE91C1C3A1CE100A82A0C /* MVNavigationControllerStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVNavigationControllerStack.m; sourceTree = "<group>"; };
+		D57DE9221C3A2F9200A82A0C /* MVKit_MVConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVKit_MVConfig.h; sourceTree = "<group>"; };
+		D57DE92B1C3A506000A82A0C /* MVKit_MVConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVKit_MVConstant.h; sourceTree = "<group>"; };
+		D57DE92C1C3A50CA00A82A0C /* MVKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVKit.h; sourceTree = "<group>"; };
+		D57DE92D1C3A547D00A82A0C /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		D57DE9301C3A55B100A82A0C /* MVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVViewController.h; sourceTree = "<group>"; };
+		D57DE9311C3A55B100A82A0C /* MVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVViewController.m; sourceTree = "<group>"; };
+		D57DE9331C3A573800A82A0C /* UINavigationController+MVExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MVExtensions.h"; sourceTree = "<group>"; };
+		D57DE9341C3A573800A82A0C /* UINavigationController+MVExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MVExtensions.m"; sourceTree = "<group>"; };
+		D57DE9361C3A577500A82A0C /* MVViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVViewModel.h; sourceTree = "<group>"; };
+		D57DE9371C3A577500A82A0C /* MVViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVViewModel.m; sourceTree = "<group>"; };
+		D57DE9391C3A774C00A82A0C /* MVRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRouter.h; sourceTree = "<group>"; };
+		D57DE93A1C3A774C00A82A0C /* MVRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRouter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,12 +85,49 @@
 			buildActionMask = 2147483647;
 			files = (
 				D57DE9161C3A112000A82A0C /* ReactiveCocoa.framework in Frameworks */,
+				D57DE92E1C3A547D00A82A0C /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D50D62151C3B97A3005C5EE4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D50D62061C3B6D04005C5EE4 /* TTHomeViewModel.h */,
+				D50D62071C3B6D04005C5EE4 /* TTHomeViewModel.m */,
+				D50D62191C3B9A5A005C5EE4 /* TTLoginViewModel.h */,
+				D50D621A1C3B9A5A005C5EE4 /* TTLoginViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		D50D62161C3B97AF005C5EE4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D50D62171C3B97C6005C5EE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D50D62091C3B6D18005C5EE4 /* TTHomeViewController.h */,
+				D50D620A1C3B6D18005C5EE4 /* TTHomeViewController.m */,
+				D50D621C1C3B9CD2005C5EE4 /* TTLoginViewController.h */,
+				D50D621D1C3B9CD2005C5EE4 /* TTLoginViewController.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D50D62181C3B97CC005C5EE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		D57DE8E51C3A08C000A82A0C = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +152,6 @@
 				D57DE9111C3A0A1000A82A0C /* Src */,
 				D57DE9101C3A0A0100A82A0C /* MVKit */,
 				D57DE90C1C3A09D200A82A0C /* AppDelegate */,
-				D57DE8F71C3A08C000A82A0C /* ViewController.h */,
-				D57DE8F81C3A08C000A82A0C /* ViewController.m */,
 				D57DE8F11C3A08C000A82A0C /* Supporting Files */,
 			);
 			path = MVVMTest;
@@ -101,8 +170,8 @@
 		D57DE90C1C3A09D200A82A0C /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				D57DE90D1C3A09ED00A82A0C /* AppDelegate.h */,
-				D57DE90E1C3A09ED00A82A0C /* AppDelegate.m */,
+				D57DE90D1C3A09ED00A82A0C /* TTAppDelegate.h */,
+				D57DE90E1C3A09ED00A82A0C /* TTAppDelegate.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -110,8 +179,10 @@
 		D57DE9101C3A0A0100A82A0C /* MVKit */ = {
 			isa = PBXGroup;
 			children = (
-				D57DE91B1C3A1CE100A82A0C /* MVNavigationControllerStack.h */,
-				D57DE91C1C3A1CE100A82A0C /* MVNavigationControllerStack.m */,
+				D57DE92C1C3A50CA00A82A0C /* MVKit.h */,
+				D57DE9241C3A4C8E00A82A0C /* Category */,
+				D57DE9231C3A4C7300A82A0C /* BaseClass */,
+				D57DE91F1C3A2F0600A82A0C /* Macro */,
 			);
 			path = MVKit;
 			sourceTree = "<group>";
@@ -119,6 +190,10 @@
 		D57DE9111C3A0A1000A82A0C /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				D50D62181C3B97CC005C5EE4 /* View */,
+				D50D62171C3B97C6005C5EE4 /* Model */,
+				D50D62161C3B97AF005C5EE4 /* Controller */,
+				D50D62151C3B97A3005C5EE4 /* ViewModel */,
 			);
 			path = Src;
 			sourceTree = "<group>";
@@ -134,9 +209,47 @@
 		D57DE9191C3A117E00A82A0C /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
+				D57DE92D1C3A547D00A82A0C /* AFNetworking.framework */,
 				D57DE9151C3A112000A82A0C /* ReactiveCocoa.framework */,
 			);
 			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		D57DE91F1C3A2F0600A82A0C /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				D57DE9221C3A2F9200A82A0C /* MVKit_MVConfig.h */,
+				D57DE92B1C3A506000A82A0C /* MVKit_MVConstant.h */,
+			);
+			name = Macro;
+			sourceTree = "<group>";
+		};
+		D57DE9231C3A4C7300A82A0C /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				D50D62001C3B4FCF005C5EE4 /* MVPageDispatchService.h */,
+				D50D62011C3B4FCF005C5EE4 /* MVPageDispatchService.m */,
+				D50D62031C3B522F005C5EE4 /* MVNavigationController.h */,
+				D50D62041C3B522F005C5EE4 /* MVNavigationController.m */,
+				D57DE9301C3A55B100A82A0C /* MVViewController.h */,
+				D57DE9311C3A55B100A82A0C /* MVViewController.m */,
+				D57DE9361C3A577500A82A0C /* MVViewModel.h */,
+				D57DE9371C3A577500A82A0C /* MVViewModel.m */,
+				D57DE9391C3A774C00A82A0C /* MVRouter.h */,
+				D57DE93A1C3A774C00A82A0C /* MVRouter.m */,
+				D50D62221C3BA571005C5EE4 /* MVTabBarController.h */,
+				D50D62231C3BA571005C5EE4 /* MVTabBarController.m */,
+			);
+			name = BaseClass;
+			sourceTree = "<group>";
+		};
+		D57DE9241C3A4C8E00A82A0C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D57DE9331C3A573800A82A0C /* UINavigationController+MVExtensions.h */,
+				D57DE9341C3A573800A82A0C /* UINavigationController+MVExtensions.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,10 +321,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D57DE8F91C3A08C000A82A0C /* ViewController.m in Sources */,
-				D57DE91D1C3A1CE100A82A0C /* MVNavigationControllerStack.m in Sources */,
+				D57DE9321C3A55B100A82A0C /* MVViewController.m in Sources */,
+				D57DE93B1C3A774C00A82A0C /* MVRouter.m in Sources */,
+				D50D62241C3BA571005C5EE4 /* MVTabBarController.m in Sources */,
+				D50D62051C3B522F005C5EE4 /* MVNavigationController.m in Sources */,
+				D50D62081C3B6D04005C5EE4 /* TTHomeViewModel.m in Sources */,
+				D50D621B1C3B9A5A005C5EE4 /* TTLoginViewModel.m in Sources */,
+				D57DE9351C3A573800A82A0C /* UINavigationController+MVExtensions.m in Sources */,
+				D50D621E1C3B9CD2005C5EE4 /* TTLoginViewController.m in Sources */,
+				D50D62021C3B4FCF005C5EE4 /* MVPageDispatchService.m in Sources */,
+				D57DE9381C3A577500A82A0C /* MVViewModel.m in Sources */,
 				D57DE8F31C3A08C000A82A0C /* main.m in Sources */,
-				D57DE90F1C3A09ED00A82A0C /* AppDelegate.m in Sources */,
+				D50D620B1C3B6D18005C5EE4 /* TTHomeViewController.m in Sources */,
+				D57DE90F1C3A09ED00A82A0C /* TTAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +473,7 @@
 				D57DE90A1C3A08C000A82A0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
