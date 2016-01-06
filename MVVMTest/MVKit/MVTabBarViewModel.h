@@ -10,6 +10,11 @@
 
 @interface MVTabBarViewModel : MVViewModel
 
+@property (nonatomic, strong, readonly) NSArray *titles;
 @property (nonatomic, strong, readonly) NSArray *viewModels;
+@property (nonatomic, strong, readonly) NSArray *tabBarNormalImages;
+@property (nonatomic, strong, readonly) NSArray *tabBarSelectedImages;
+@property (nonatomic, strong, readonly) UIImage *tabBarNormalBackgroundImage;
+@property (nonatomic, strong, readonly) UIImage *tabBarSelectedBackgroundImage;
 
 @end

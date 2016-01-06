@@ -9,6 +9,7 @@
 #import "TTAppDelegate.h"
 #import "TTHomeViewModel.h"
 #import "TTLoginViewModel.h"
+#import "TTTabBarViewModel.h"
 
 @interface TTAppDelegate ()
 
@@ -26,8 +27,10 @@
     _window.backgroundColor = [UIColor whiteColor];
     [_window makeKeyAndVisible];
     
-    TTLoginViewModel *homeViewModel = [[TTLoginViewModel alloc] initWithTitle:@"登录" parameter:nil];
-    [MVPageDispatchService resetRootViewModel:homeViewModel];
+    TTTabBarViewModel *tabBarModel = [[TTTabBarViewModel alloc] initWithTitle:nil parameter:nil];
+//    TTLoginViewModel *tabBarModel = [[TTLoginViewModel alloc] initWithTitle:@"Test" parameter:nil];
+
+    [MVPageDispatchService resetRootViewModel:tabBarModel];
     
     return YES;
 }

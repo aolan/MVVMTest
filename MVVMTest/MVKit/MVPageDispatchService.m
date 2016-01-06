@@ -54,10 +54,19 @@
 
 + (UIViewController *)resetRootViewModel:(MVViewModel *)viewModel{
     
-    UIViewController *controller = [[MVRouter router] viewControllerForViewModel:viewModel];
-    MVNavigationController *rootViewController = [[MVNavigationController alloc] initWithRootViewController:controller];
-    MVSharedAppDelegate.window.rootViewController = rootViewController;
-    return controller;
+    if ([viewModel isKindOfClass:[MVTabBarViewModel class]]) {
+        
+        MVTabBarViewModel *tabBarViewModel = (MVTabBarViewModel *)viewModel;
+        MVTabBarViewController *controller = [[MVTabBarViewController alloc] initWithViewModel:tabBarViewModel];
+        MVSharedAppDelegate.window.rootViewController = controller;
+        return controller;
+        
+    }else{
+        UIViewController *controller = [[MVRouter router] viewControllerForViewModel:viewModel];
+        MVNavigationController *rootViewController = [[MVNavigationController alloc] initWithRootViewController:controller];
+        MVSharedAppDelegate.window.rootViewController = rootViewController;
+        return controller;
+    }
 }
 
 #pragma mark - Private Methods

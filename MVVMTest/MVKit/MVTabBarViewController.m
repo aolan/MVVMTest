@@ -9,46 +9,111 @@
 #import "MVTabBarViewController.h"
 #import "MVTabBarViewModel.h"
 
-@interface MVTabBarViewController ()
-
-@property (nonatomic, strong, readwrite) RDVTabBarController *tabBarController;
-
-@end
-
-
 @implementation MVTabBarViewController
+
+#pragma mark - Interface Methods
+
+- (MVTabBarViewController *)initWithViewModel:(MVTabBarViewModel *)viewModel{
+    
+    self = [super init];
+    if (self) {
+        _viewModel = viewModel;
+    }
+    return self;
+}
+
+#pragma mark - Lifycycle Methods
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone{
+    
+    MVTabBarViewController *tabBarViewController = [super allocWithZone:zone];
+    
+    @weakify(tabBarViewController);
+    [[tabBarViewController rac_signalForSelector:@selector(viewDidLoad)] subscribeNext:^(id x) {
+        @strongify(tabBarViewController);
+        [tabBarViewController bindViewModel];
+    }];
+    
+    return tabBarViewController;
+}
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-
-    
 }
+
+
+#pragma mark - Override Methods
 
 - (void)bindViewModel{
     
-    [super bindViewModel];
-    
     @weakify(self)
-    [[self.viewModel rac_signalForSelector:@selector(setupViewModels)] subscribeNext:^(id x) {
+    [RACObserve(self.viewModel, viewModels) subscribeNext:^(id x) {
         @strongify(self)
-        if ([self.viewModel isKindOfClass:[MVTabBarViewModel class]]) {
-            MVTabBarViewModel *barViewModel = (MVTabBarViewModel *)self.viewModel;
-            self.tabBarController.viewControllers = barViewModel.viewModels;
-        }
+        [self setupViewControllers];
     }];
 }
 
-#pragma mark - Property Methods
-
-- (RDVTabBarController *)tabBarController{
-    
-    if (_tabBarController == nil) {
-        _tabBarController = [[RDVTabBarController alloc] init];
-        _tabBarController.delegate = self;
-    }
-    return _tabBarController;
+- (BOOL)shouldAutorotate {
+    return self.tabBarController.shouldAutorotate;
 }
 
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return self.tabBarController.supportedInterfaceOrientations;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return self.tabBarController.preferredStatusBarStyle;
+}
+
+#pragma mark - Private Methods
+
+- (void)setupViewControllers{
+    
+    NSMutableArray *controllers = [[NSMutableArray alloc] initWithCapacity:self.viewModel.viewModels.count];
+    
+    [self.viewModel.viewModels enumerateObjectsUsingBlock:^(NSString *viewModelString, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        NSAssert([viewModelString isKindOfClass:[NSString class]], @"viewModels应当存放字符串类型");
+        NSString *viewModelTitle = [self.viewModel.titles objectAtIndex:idx];
+        
+        MVViewModel *viewModel = [[NSClassFromString(viewModelString) alloc] initWithTitle:viewModelTitle parameter:nil];
+        MVViewController *viewController = [[MVRouter router] viewControllerForViewModel:viewModel];
+        MVNavigationController *navController = [[MVNavigationController alloc] initWithRootViewController:viewController];
+        [controllers addObject:navController];
+    }];
+    
+    self.viewControllers = controllers;
+    
+    [self settingTabBar];
+    [self settingNavigationBar];
+}
+
+- (void)settingTabBar{
+    
+    [self.tabBar.items enumerateObjectsUsingBlock:^(RDVTabBarItem *item, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        NSString *normalImageString = [self.viewModel.tabBarNormalImages objectAtIndex:idx];
+        NSString *selectedImageString = [self.viewModel.tabBarSelectedImages objectAtIndex:idx];
+        
+        UIImage *normalImage = [UIImage imageNamed:normalImageString];
+        UIImage *selectedImage = [UIImage imageNamed:selectedImageString];
+        
+        [item setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:normalImage];
+        [item setBackgroundSelectedImage:self.viewModel.tabBarSelectedBackgroundImage withUnselectedImage:self.viewModel.tabBarNormalBackgroundImage];
+
+    }];
+}
+
+- (void)settingNavigationBar {
+    
+    NSDictionary *titleAttributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:18],
+                                      NSForegroundColorAttributeName: [UIColor blackColor]};
+    
+    UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
+    [navigationBarAppearance setBackgroundColor:[UIColor whiteColor]];
+    [navigationBarAppearance setTitleTextAttributes:titleAttributes];
+    [navigationBarAppearance setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+}
 
 @end

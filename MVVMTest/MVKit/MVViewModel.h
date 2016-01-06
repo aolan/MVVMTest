@@ -11,6 +11,7 @@
 @interface MVViewModel : NSObject
 
 @property (nonatomic, copy  ) NSString *title;
+
 @property (nonatomic, strong, readonly) RACSubject *willDisappearSignal;
 @property (nonatomic, strong, readonly) id parameter;
 

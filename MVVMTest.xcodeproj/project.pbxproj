@@ -15,12 +15,13 @@
 		D50D62371C3BC3F6005C5EE4 /* TTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D622D1C3BC3F6005C5EE4 /* TTHomeViewController.m */; };
 		D50D62381C3BC3F6005C5EE4 /* TTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D622F1C3BC3F6005C5EE4 /* TTLoginViewController.m */; };
 		D50D62391C3BC3F6005C5EE4 /* TTLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D62341C3BC3F6005C5EE4 /* TTLoginViewModel.m */; };
-		D50D623A1C3BC3F6005C5EE4 /* TTTabBarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D62361C3BC3F6005C5EE4 /* TTTabBarViewModel.m */; };
 		D50D623D1C3BC449005C5EE4 /* TTHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D623C1C3BC449005C5EE4 /* TTHomeViewModel.m */; };
-		D50D62401C3BC4A0005C5EE4 /* TTTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D623F1C3BC4A0005C5EE4 /* TTTabBarViewController.m */; };
 		D50D62431C3BC569005C5EE4 /* TTMineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D62421C3BC569005C5EE4 /* TTMineViewModel.m */; };
 		D50D62461C3BC57B005C5EE4 /* TTMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D62451C3BC57B005C5EE4 /* TTMineViewController.m */; };
 		D50D62491C3BC67D005C5EE4 /* MVTabBarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D62481C3BC67D005C5EE4 /* MVTabBarViewModel.m */; };
+		D50D624D1C3BD619005C5EE4 /* TTTabBarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D624C1C3BD619005C5EE4 /* TTTabBarViewModel.m */; };
+		D50D62501C3BD6B6005C5EE4 /* TTTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D624F1C3BD6B6005C5EE4 /* TTTabBarViewController.m */; };
+		D579C8D61C3CAAAC0073AEDA /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D579C8D51C3CAAAC0073AEDA /* Common.xcassets */; };
 		D57DE8F31C3A08C000A82A0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE8F21C3A08C000A82A0C /* main.m */; };
 		D57DE90F1C3A09ED00A82A0C /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DE90E1C3A09ED00A82A0C /* TTAppDelegate.m */; };
 		D57DE9141C3A0A4000A82A0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57DE9131C3A0A4000A82A0C /* Assets.xcassets */; };
@@ -64,18 +65,19 @@
 		D50D622F1C3BC3F6005C5EE4 /* TTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLoginViewController.m; sourceTree = "<group>"; };
 		D50D62331C3BC3F6005C5EE4 /* TTLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLoginViewModel.h; sourceTree = "<group>"; };
 		D50D62341C3BC3F6005C5EE4 /* TTLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLoginViewModel.m; sourceTree = "<group>"; };
-		D50D62351C3BC3F6005C5EE4 /* TTTabBarViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBarViewModel.h; sourceTree = "<group>"; };
-		D50D62361C3BC3F6005C5EE4 /* TTTabBarViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBarViewModel.m; sourceTree = "<group>"; };
 		D50D623B1C3BC449005C5EE4 /* TTHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTHomeViewModel.h; sourceTree = "<group>"; };
 		D50D623C1C3BC449005C5EE4 /* TTHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTHomeViewModel.m; sourceTree = "<group>"; };
-		D50D623E1C3BC4A0005C5EE4 /* TTTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBarViewController.h; sourceTree = "<group>"; };
-		D50D623F1C3BC4A0005C5EE4 /* TTTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBarViewController.m; sourceTree = "<group>"; };
 		D50D62411C3BC569005C5EE4 /* TTMineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMineViewModel.h; sourceTree = "<group>"; };
 		D50D62421C3BC569005C5EE4 /* TTMineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMineViewModel.m; sourceTree = "<group>"; };
 		D50D62441C3BC57B005C5EE4 /* TTMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMineViewController.h; sourceTree = "<group>"; };
 		D50D62451C3BC57B005C5EE4 /* TTMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMineViewController.m; sourceTree = "<group>"; };
 		D50D62471C3BC67D005C5EE4 /* MVTabBarViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVTabBarViewModel.h; sourceTree = "<group>"; };
 		D50D62481C3BC67D005C5EE4 /* MVTabBarViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVTabBarViewModel.m; sourceTree = "<group>"; };
+		D50D624B1C3BD619005C5EE4 /* TTTabBarViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBarViewModel.h; sourceTree = "<group>"; };
+		D50D624C1C3BD619005C5EE4 /* TTTabBarViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBarViewModel.m; sourceTree = "<group>"; };
+		D50D624E1C3BD6B6005C5EE4 /* TTTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBarViewController.h; sourceTree = "<group>"; };
+		D50D624F1C3BD6B6005C5EE4 /* TTTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBarViewController.m; sourceTree = "<group>"; };
+		D579C8D51C3CAAAC0073AEDA /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
 		D57DE8EE1C3A08C000A82A0C /* MVVMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57DE8F21C3A08C000A82A0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D57DE9051C3A08C000A82A0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,12 +137,10 @@
 		D50D622B1C3BC3F6005C5EE4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D50D623E1C3BC4A0005C5EE4 /* TTTabBarViewController.h */,
-				D50D623F1C3BC4A0005C5EE4 /* TTTabBarViewController.m */,
-				D50D622C1C3BC3F6005C5EE4 /* TTHomeViewController.h */,
-				D50D622D1C3BC3F6005C5EE4 /* TTHomeViewController.m */,
 				D50D622E1C3BC3F6005C5EE4 /* TTLoginViewController.h */,
 				D50D622F1C3BC3F6005C5EE4 /* TTLoginViewController.m */,
+				D50D622C1C3BC3F6005C5EE4 /* TTHomeViewController.h */,
+				D50D622D1C3BC3F6005C5EE4 /* TTHomeViewController.m */,
 				D50D62441C3BC57B005C5EE4 /* TTMineViewController.h */,
 				D50D62451C3BC57B005C5EE4 /* TTMineViewController.m */,
 			);
@@ -164,8 +164,6 @@
 		D50D62321C3BC3F6005C5EE4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D50D62351C3BC3F6005C5EE4 /* TTTabBarViewModel.h */,
-				D50D62361C3BC3F6005C5EE4 /* TTTabBarViewModel.m */,
 				D50D62331C3BC3F6005C5EE4 /* TTLoginViewModel.h */,
 				D50D62341C3BC3F6005C5EE4 /* TTLoginViewModel.m */,
 				D50D623B1C3BC449005C5EE4 /* TTHomeViewModel.h */,
@@ -174,6 +172,17 @@
 				D50D62421C3BC569005C5EE4 /* TTMineViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D50D624A1C3BD5F9005C5EE4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D50D624B1C3BD619005C5EE4 /* TTTabBarViewModel.h */,
+				D50D624C1C3BD619005C5EE4 /* TTTabBarViewModel.m */,
+				D50D624E1C3BD6B6005C5EE4 /* TTTabBarViewController.h */,
+				D50D624F1C3BD6B6005C5EE4 /* TTTabBarViewController.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		D57DE8E51C3A08C000A82A0C = {
@@ -198,10 +207,10 @@
 		D57DE8F01C3A08C000A82A0C /* MVVMTest */ = {
 			isa = PBXGroup;
 			children = (
+				D57DE90C1C3A09D200A82A0C /* AppDelegate */,
 				D57DE9121C3A0A2C00A82A0C /* Sources */,
 				D57DE9111C3A0A1000A82A0C /* Src */,
 				D57DE9101C3A0A0100A82A0C /* MVKit */,
-				D57DE90C1C3A09D200A82A0C /* AppDelegate */,
 				D57DE8F11C3A08C000A82A0C /* Supporting Files */,
 			);
 			path = MVVMTest;
@@ -240,6 +249,7 @@
 		D57DE9111C3A0A1000A82A0C /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				D50D624A1C3BD5F9005C5EE4 /* Common */,
 				D50D622B1C3BC3F6005C5EE4 /* Controller */,
 				D50D62301C3BC3F6005C5EE4 /* Model */,
 				D50D62311C3BC3F6005C5EE4 /* View */,
@@ -252,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				D57DE9131C3A0A4000A82A0C /* Assets.xcassets */,
+				D579C8D51C3CAAAC0073AEDA /* Common.xcassets */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -367,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D579C8D61C3CAAAC0073AEDA /* Common.xcassets in Resources */,
 				D57DE9141C3A0A4000A82A0C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D50D623A1C3BC3F6005C5EE4 /* TTTabBarViewModel.m in Sources */,
+				D50D62501C3BD6B6005C5EE4 /* TTTabBarViewController.m in Sources */,
 				D57DE9321C3A55B100A82A0C /* MVViewController.m in Sources */,
 				D57DE93B1C3A774C00A82A0C /* MVRouter.m in Sources */,
 				D50D62391C3BC3F6005C5EE4 /* TTLoginViewModel.m in Sources */,
@@ -434,8 +446,8 @@
 				D50D62461C3BC57B005C5EE4 /* TTMineViewController.m in Sources */,
 				D50D62491C3BC67D005C5EE4 /* MVTabBarViewModel.m in Sources */,
 				D50D62051C3B522F005C5EE4 /* MVNavigationController.m in Sources */,
-				D50D62401C3BC4A0005C5EE4 /* TTTabBarViewController.m in Sources */,
 				D57DE9351C3A573800A82A0C /* UINavigationController+MVExtensions.m in Sources */,
+				D50D624D1C3BD619005C5EE4 /* TTTabBarViewModel.m in Sources */,
 				D50D623D1C3BC449005C5EE4 /* TTHomeViewModel.m in Sources */,
 				D50D62021C3B4FCF005C5EE4 /* MVPageDispatchService.m in Sources */,
 				D50D62381C3BC3F6005C5EE4 /* TTLoginViewController.m in Sources */,

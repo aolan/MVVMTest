@@ -6,10 +6,15 @@
 //  Copyright © 2016年 lawn. All rights reserved.
 //
 
-#import "MVViewController.h"
+#import "RDVTabBarController.h"
+#import "MVTabBarViewModel.h"
 
-@interface MVTabBarViewController : MVViewController<RDVTabBarControllerDelegate>
+@interface MVTabBarViewController : RDVTabBarController
 
-@property (nonatomic, strong, readonly) RDVTabBarController *tabBarController;
+@property (nonatomic, strong, readonly) MVTabBarViewModel *viewModel;
+
+- (instancetype)initWithViewModel:(MVTabBarViewModel *)viewModel;
+
+- (void)bindViewModel;
 
 @end
