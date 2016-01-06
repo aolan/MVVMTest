@@ -37,12 +37,6 @@
     return tabBarViewController;
 }
 
-- (void)viewDidLoad {
-    
-    [super viewDidLoad];
-}
-
-
 #pragma mark - Override Methods
 
 - (void)bindViewModel{
@@ -107,11 +101,11 @@
 
 - (void)settingNavigationBar {
     
-    NSDictionary *titleAttributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:18],
-                                      NSForegroundColorAttributeName: [UIColor blackColor]};
+    NSDictionary *titleAttributes = @{NSFontAttributeName: MVNaviagtionBarTitleFont,
+                                      NSForegroundColorAttributeName: MVNaviagtionBarTitleColor};
     
     UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
-    [navigationBarAppearance setBackgroundColor:[UIColor whiteColor]];
+    [navigationBarAppearance setBackgroundColor:MVNaviagtionBarBackgroundColor];
     [navigationBarAppearance setTitleTextAttributes:titleAttributes];
     [navigationBarAppearance setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
 }

@@ -13,6 +13,8 @@
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
     #import "MVKit.h"
+    #import "TTLoginViewModel.h"
+    #import "TTUserCenter.h"
 #endif
 
 #endif /* MVVMTest_Prefix_pch */

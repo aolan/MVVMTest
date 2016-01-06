@@ -10,4 +10,11 @@
 
 @implementation TTHomeViewController
 
+- (void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+}
+
+
 @end

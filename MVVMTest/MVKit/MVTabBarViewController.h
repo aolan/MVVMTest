@@ -7,7 +7,7 @@
 //
 
 #import "RDVTabBarController.h"
-#import "MVTabBarViewModel.h"
+
 
 @interface MVTabBarViewController : RDVTabBarController
 

@@ -10,4 +10,17 @@
 
 @implementation TTLoginViewController
 
+
+- (void)viewDidLoad{
+    
+    [super viewDidLoad];
+    
+    [self mv_addLeftBarButtonWithTarget:self action:@selector(dismissAction) title:@"取消" needsClear:YES];
+}
+
+- (void)dismissAction{
+    
+    [MVPageDispatchService dismissViewModelAnimated:YES completion:NULL];
+}
+
 @end

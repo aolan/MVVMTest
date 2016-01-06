@@ -10,6 +10,7 @@
 #define MVKit_h
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <AFNetworking/AFNetworking.h>
 #import "RDVTabBarController.h"
 #import "RDVTabBar.h"
 #import "RDVTabBarItem.h"
@@ -23,6 +24,7 @@
 #import "MVRouter.h"
 #import "MVPageDispatchService.h"
 #import "MVNavigationController.h"
+#import "UIViewController+MVExtensions.h"
 
 
 

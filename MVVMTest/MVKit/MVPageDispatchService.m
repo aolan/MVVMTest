@@ -41,7 +41,8 @@
 + (UIViewController *)presentViewModel:(MVViewModel *)viewModel animated:(BOOL)animated completion:(void (^)())complete{
     
     UIViewController *controller = [[MVRouter router] viewControllerForViewModel:viewModel];
-    [[self visibleViewController] presentViewController:controller animated:animated completion:complete];
+    MVNavigationController *navigationController = [[MVNavigationController alloc] initWithRootViewController:controller];
+    [[self visibleViewController] presentViewController:navigationController animated:animated completion:complete];
     return controller;
 }
 
@@ -62,6 +63,7 @@
         return controller;
         
     }else{
+        
         UIViewController *controller = [[MVRouter router] viewControllerForViewModel:viewModel];
         MVNavigationController *rootViewController = [[MVNavigationController alloc] initWithRootViewController:controller];
         MVSharedAppDelegate.window.rootViewController = rootViewController;
@@ -80,9 +82,9 @@
         UINavigationController *nvc = (UINavigationController *)parentViewController;
         visibleViewController = [self visibleViewController:nvc.visibleViewController];
         
-    }else if ([parentViewController isKindOfClass:[UITabBarController class]]) {
+    }else if ([parentViewController isKindOfClass:[MVTabBarViewController class]]) {
         
-        UITabBarController *tabBarController = (UITabBarController *)parentViewController;
+        MVTabBarViewController *tabBarController = (MVTabBarViewController *)parentViewController;
         visibleViewController = [self visibleViewController:tabBarController.selectedViewController];
         
     }else if (parentViewController.presentedViewController) {
@@ -90,6 +92,7 @@
         visibleViewController = [self visibleViewController:parentViewController.presentedViewController];
         
     }else {
+        
         visibleViewController = parentViewController;
     }
     

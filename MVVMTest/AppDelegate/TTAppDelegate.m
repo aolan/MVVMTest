@@ -7,33 +7,26 @@
 //
 
 #import "TTAppDelegate.h"
-#import "TTHomeViewModel.h"
-#import "TTLoginViewModel.h"
 #import "TTTabBarViewModel.h"
 
-@interface TTAppDelegate ()
-
-@property (nonatomic, strong) MVPageDispatchService *dispatchService;
-
-@end
 
 @implementation TTAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    
+
+    AFNetworkActivityIndicatorManager.sharedManager.enabled = YES;
+
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor = [UIColor whiteColor];
     [_window makeKeyAndVisible];
     
     TTTabBarViewModel *tabBarModel = [[TTTabBarViewModel alloc] initWithTitle:nil parameter:nil];
-//    TTLoginViewModel *tabBarModel = [[TTLoginViewModel alloc] initWithTitle:@"Test" parameter:nil];
-
     [MVPageDispatchService resetRootViewModel:tabBarModel];
     
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

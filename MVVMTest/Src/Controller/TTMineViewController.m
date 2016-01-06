@@ -20,6 +20,14 @@
 
 }
 
-
+- (void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    if ([TTUserCenter center].isLogined) {
+        
+        //code
+    }
+}
 
 @end

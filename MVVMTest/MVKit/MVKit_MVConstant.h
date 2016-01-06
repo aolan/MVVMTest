@@ -12,10 +12,10 @@
 #import "TTAppDelegate.h"
 
 ///------------
-/// MVAppDelegate
+/// AppDelegate
 ///------------
 
-#define MVSharedAppDelegate ((TTAppDelegate *)[[UIApplication sharedApplication] delegate])
+#define MVSharedAppDelegate [[UIApplication sharedApplication] delegate]
 
 
 #endif /* MVKit_MVConstant_h */
