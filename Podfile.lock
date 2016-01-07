@@ -1,10 +1,13 @@
 PODS:
+  - Masonry (0.6.4)
   - RDVTabBarController (1.1.9)
 
 DEPENDENCIES:
+  - Masonry (~> 0.6.4)
   - RDVTabBarController (~> 1.1.9)
 
 SPEC CHECKSUMS:
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
 
 COCOAPODS: 0.39.0

@@ -22,8 +22,7 @@
     [_window makeKeyAndVisible];
     
     TTTabBarViewModel *tabBarModel = [[TTTabBarViewModel alloc] initWithTitle:nil parameter:nil];
-    [MVPageDispatchService resetRootViewModel:tabBarModel];
-    
+    [MVPageDispatchService resetRootViewModel:tabBarModel];    
     return YES;
 }
 

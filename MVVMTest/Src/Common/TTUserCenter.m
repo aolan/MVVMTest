@@ -60,8 +60,8 @@ static TTUserCenter *shareInstance = nil;
         [[NSUserDefaults standardUserDefaults] synchronize];
     }];
     
-    [[self rac_signalForSelector:@selector(isLogined)] subscribeNext:^(RACTuple *tuple) {
-        if (![tuple.first boolValue]) {
+    [RACObserve(self, isLogined) subscribeNext:^(id x) {
+        if (![x boolValue]) {
             TTLoginViewModel *loginViewModel = [[TTLoginViewModel alloc] initWithTitle:@"登录" parameter:nil];
             [MVPageDispatchService presentViewModel:loginViewModel animated:YES completion:NULL];
         }

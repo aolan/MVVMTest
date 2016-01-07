@@ -7,71 +7,144 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DA92CB44F6DC4FC524F8D68B9E188BE /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A7358944F8BCCB304F3603C8A7CE54 /* RDVTabBarController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		11389EDDCD5785556061AE8A4E10A372 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */; };
-		185C97741A795C5A9B51F9997F283369 /* RDVTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B52E2215A444DC87BFF2A2F3F2906286 /* RDVTabBarController-dummy.m */; };
-		5506EB9A6C29391610ABCE820C109A2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
-		58DB4FFAEDDF5F12B158CB5246F470F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
-		5F9F002AC2AFDA6233FA90A8468A83E2 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DD5A200F3DA0AF36CD0C7E4434D662 /* RDVTabBar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		618DEF1684C7ACA386B97291869D9FFE /* Pods-MVVMTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 937776BA1295F3A5E79A0F1559A5B1A2 /* Pods-MVVMTest-dummy.m */; };
-		71FC1C73C68621D73849C3473997FFD5 /* RDVTabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B50856494F960A9466DD4A3A81870645 /* RDVTabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		781EBA39BC33DE6CEBBA2811A5C31425 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F786E8CFDB34E00FF371C9F25F65B656 /* RDVTabBarItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9F98CF1005F8B158E0B80BE61F7C1FB9 /* RDVTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2C10AC8F61EABB7FEDA341D1F53A6E /* RDVTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D124A7FBD53C6419D531DB5613225AD0 /* RDVTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F2BBEF294ACDF52B9B4A372093879C06 /* RDVTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBBA412CE3712F6B19FACC6A308D3350 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */; };
+		067D10BA1984BA3497E9211A65FC2048 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A091A38D4284F83760138710247F465D /* MASConstraintMaker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0DCEEF3B527B330E09955381459D25F5 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EF57677AF16656F33C776A96505162 /* RDVTabBarController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1747BB149772225E9E80BFF79C552657 /* Pods-MVVMTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 937776BA1295F3A5E79A0F1559A5B1A2 /* Pods-MVVMTest-dummy.m */; };
+		1B2F3D8DDFDA028A5FBF9D9571A59F20 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2A7F4709FF6B7B6604B2276B582F65 /* MASConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2905381350CEFFBFFA9BC8B5D027F190 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9E21FBF3CF707EA17B7AADE50FB656 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2979E54C4AFD27076576E82ADEED2F00 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFDA77576917A0C36A1FA1212B87E50 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F85D170E76C661AB0D9E9A8B206C78D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
+		331718BFB4A91CFFE026492905231562 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C2DE55F139CA58C617E27ABFD8C0EFDF /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3ED00CCDF2BF93C8048812BF2AD44326 /* RDVTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9766618E98271E2BDCB73ED59438312E /* RDVTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F63C119F95A6735AE627BBB1BEBC4B1 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = D1793BE5249830177328F8F4258F357B /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FE106A8255FE6832D30B96EC0466D90 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D5BBCE8860AB94CEFF4C7FA0A5C7B /* NSLayoutConstraint+MASDebugAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		432BD50F1E699EDF2EA007E850FFCEF7 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1A18676B5B48FBB5BDC4B26391BD2B /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FF8E2D1193DD5C5E02861F16802AEBD /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2D3B2ED494419AFDB1F752570CC1AC /* MASLayoutConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		54138CE3E6BF12A77A846E86418E4304 /* RDVTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F3E876E105F15191736E3AE2C1D8C0 /* RDVTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		635C6117BA4F7576BC19343A7965A8BD /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8D96324843C078EC8D982243744AC /* MASViewAttribute.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		69173BC87268C8316F47C3348AC2890C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */; };
+		6FC6586871A6303509B134E0B50AB287 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A19F4F4C0FDAB0FCF99A5070AAC859 /* View+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		712980BAE00F43D62C7D3B63840D3DF4 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4451348932F202411DE896756F0FD54 /* Masonry-dummy.m */; };
+		71B4B31C29150345DDAEAE1C9CCE8F1E /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AE69D8B8ADBD75F838BC6619C3BC4C /* MASViewConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7C538A3015E74162D452AF2D82027E43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
+		7EEF24C78DE27D2300A976773E55F47C /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F37E4C97D4FFC4102B388232D23C632 /* RDVTabBarItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		83AFFAB667166F839438D0D653B178F3 /* RDVTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6714638D4D37027D33897C9ADA497C6A /* RDVTabBarController-dummy.m */; };
+		9205037BA8C22574B33FC96C5EA829A3 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = E12374A0409194859D568DC47F2CA4CD /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99D8C610BC84BE231C5D3D280F3B12AF /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 776BA39D943674FA30F9EFFBC883FED3 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A6AE1EF2E94AEB6912BE845583E7D57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */; };
+		A7D31BD1F3AD4ED4612467FAD332F388 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C304E9DACA96A52006F017B82758E42 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2B7C90BA9C4DBD9851C75AC801B0E8E /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C9DE1524F16238E21306A0EBC5E434 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAFEF881B40903580086320D0FAD6768 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */; };
+		BBBA852FD60431CB19C796D0761ECA8D /* RDVTabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6236F498FDF0C69DC25768BF8D315A2D /* RDVTabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0EB3C83989A44F8DCBD47B58F95724F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
+		C6EE194D232E9FE87097C0F1DF91B9FA /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 76EA445118B14AD597B8E73E5E17D78B /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D33286950C9CB1F933C6829BD2638007 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1718E2C2EA55808F0F4315049798C5A6 /* NSArray+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DD1F717B0527C71229B3339324E35E55 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 92171F039ED651E35AF1CD5854DBFC5D /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0AB941C52556A640214FB7024D47C6F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA64EF740E5072B172CB8E2B16AEBC5 /* ViewController+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E2E235E76DA27EBBCF4095090A594260 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2347573B16E1C6CF489292696F8E7F3B /* RDVTabBar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EB02AEF303313F801392DE8D90AFF0F7 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = F3989C637C9BD0D8BF0C4E2B1C56CDFE /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC6CCC98505D2067BC98B4E6223C9DF8 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 91D6D3359EED6F233B378205FF57BA35 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4AA2299205DADFF55B7C602DAF95973 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7E9DABD3702D58D136C879DD0A97F /* MASCompositeConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FD39EBE3398E1A99965AC003B273450D /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 548A9D842295131409F192E4753B1DB4 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF682E8B083BAEBBDF38C52D89D45E37 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 32E2EF95009068C24EB486901297A6D1 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B0D52D080B43E45C9092C939FEE9C778 /* PBXContainerItemProxy */ = {
+		4C3C74DBD55D9C52792F66B3446A01D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 514E804B80DF0551963F4F603F570365;
+			remoteGlobalIDString = 839643E5D674BF35D720ACDCBE461FAB;
 			remoteInfo = RDVTabBarController;
+		};
+		BE89C767B5B79C1C6B0020CD0A57A13C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53480ED0BE09FF49E34B1702D485CAAB;
+			remoteInfo = Masonry;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09185456BAF6A468359951A0B6C0FDA9 /* RDVTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RDVTabBarController.xcconfig; sourceTree = "<group>"; };
+		05AE69D8B8ADBD75F838BC6619C3BC4C /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
 		0DDD03B6EFD651A240ED5D701BB6503F /* Pods-MVVMTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MVVMTest.debug.xcconfig"; sourceTree = "<group>"; };
+		12A19F4F4C0FDAB0FCF99A5070AAC859 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		1718E2C2EA55808F0F4315049798C5A6 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		1C2D3B2ED494419AFDB1F752570CC1AC /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		216B63791A4388B8424F951B3621560C /* Pods-MVVMTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVVMTest-frameworks.sh"; sourceTree = "<group>"; };
+		2347573B16E1C6CF489292696F8E7F3B /* RDVTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBar.m; path = RDVTabBarController/RDVTabBar.m; sourceTree = "<group>"; };
 		23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		2AD25CB384101CFF9321B0084E1FE34C /* Pods-MVVMTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MVVMTest-acknowledgements.plist"; sourceTree = "<group>"; };
-		44B27377E5285F6ADEC3B99E41EFB471 /* libPods-MVVMTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E2EF95009068C24EB486901297A6D1 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		36EF57677AF16656F33C776A96505162 /* RDVTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBarController.m; path = RDVTabBarController/RDVTabBarController.m; sourceTree = "<group>"; };
+		37C9DE1524F16238E21306A0EBC5E434 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		3A4D5BBCE8860AB94CEFF4C7FA0A5C7B /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		3C304E9DACA96A52006F017B82758E42 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		41A6D2299438FF7ECA479700EF9CF6A4 /* RDVTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RDVTabBarController.xcconfig; sourceTree = "<group>"; };
+		4CFDA77576917A0C36A1FA1212B87E50 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		4FC7E9DABD3702D58D136C879DD0A97F /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		548A9D842295131409F192E4753B1DB4 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		56A4C006B496D44D06FEA39BABB53B8B /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA8D96324843C078EC8D982243744AC /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		5E1A18676B5B48FBB5BDC4B26391BD2B /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		5FD2B095AFA14BA994F08144036E53E7 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		6236F498FDF0C69DC25768BF8D315A2D /* RDVTabBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RDVTabBarItem.h; path = RDVTabBarController/RDVTabBarItem.h; sourceTree = "<group>"; };
+		63F3E876E105F15191736E3AE2C1D8C0 /* RDVTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RDVTabBarController.h; path = RDVTabBarController/RDVTabBarController.h; sourceTree = "<group>"; };
+		6714638D4D37027D33897C9ADA497C6A /* RDVTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RDVTabBarController-dummy.m"; sourceTree = "<group>"; };
+		679B39DCB039DA2D7DB07F087BFC950C /* libRDVTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRDVTabBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7572801201A6255B05EEC7E8C0989B2A /* Pods-MVVMTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MVVMTest.release.xcconfig"; sourceTree = "<group>"; };
+		76EA445118B14AD597B8E73E5E17D78B /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		776BA39D943674FA30F9EFFBC883FED3 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		850D0174E5FA8CD20445FA2F4BC15DCC /* libRDVTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRDVTabBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F2C10AC8F61EABB7FEDA341D1F53A6E /* RDVTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RDVTabBarController.h; path = RDVTabBarController/RDVTabBarController.h; sourceTree = "<group>"; };
+		7FA64EF740E5072B172CB8E2B16AEBC5 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		810AE619D9F5A6E1C7B67AE9B9B0EEF1 /* RDVTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RDVTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		8B9E21FBF3CF707EA17B7AADE50FB656 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		8F37E4C97D4FFC4102B388232D23C632 /* RDVTabBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBarItem.m; path = RDVTabBarController/RDVTabBarItem.m; sourceTree = "<group>"; };
+		91D6D3359EED6F233B378205FF57BA35 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		92171F039ED651E35AF1CD5854DBFC5D /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		937776BA1295F3A5E79A0F1559A5B1A2 /* Pods-MVVMTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MVVMTest-dummy.m"; sourceTree = "<group>"; };
+		94F6BDB8B36EC2A3B33DC6576E256B92 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
 		95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9766618E98271E2BDCB73ED59438312E /* RDVTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RDVTabBar.h; path = RDVTabBarController/RDVTabBar.h; sourceTree = "<group>"; };
 		9AEBBC875BF9ADDD87D97DA2C401070B /* Pods-MVVMTest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVVMTest-resources.sh"; sourceTree = "<group>"; };
+		A091A38D4284F83760138710247F465D /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		A5E3CCFEFDAAEF3AD6FD35B306486D7E /* Pods-MVVMTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MVVMTest-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A6A7358944F8BCCB304F3603C8A7CE54 /* RDVTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBarController.m; path = RDVTabBarController/RDVTabBarController.m; sourceTree = "<group>"; };
-		B50856494F960A9466DD4A3A81870645 /* RDVTabBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RDVTabBarItem.h; path = RDVTabBarController/RDVTabBarItem.h; sourceTree = "<group>"; };
-		B52E2215A444DC87BFF2A2F3F2906286 /* RDVTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RDVTabBarController-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C8DD5A200F3DA0AF36CD0C7E4434D662 /* RDVTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBar.m; path = RDVTabBarController/RDVTabBar.m; sourceTree = "<group>"; };
-		E83B9DAAA44349083E91D501E47CDB59 /* RDVTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RDVTabBarController-prefix.pch"; sourceTree = "<group>"; };
-		F2BBEF294ACDF52B9B4A372093879C06 /* RDVTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RDVTabBar.h; path = RDVTabBarController/RDVTabBar.h; sourceTree = "<group>"; };
-		F786E8CFDB34E00FF371C9F25F65B656 /* RDVTabBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBarItem.m; path = RDVTabBarController/RDVTabBarItem.m; sourceTree = "<group>"; };
+		BD2A7F4709FF6B7B6604B2276B582F65 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		C2DE55F139CA58C617E27ABFD8C0EFDF /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		C4451348932F202411DE896756F0FD54 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		D1793BE5249830177328F8F4258F357B /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		E12374A0409194859D568DC47F2CA4CD /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		ECC4A3FDDBEA395B0F6C9D74A93E9B57 /* libPods-MVVMTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3989C637C9BD0D8BF0C4E2B1C56CDFE /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5E9A5D3341CD3DBD282860A1FC5025B1 /* Frameworks */ = {
+		B20E2EF83B52C76EA583A27C53F2A700 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11389EDDCD5785556061AE8A4E10A372 /* CoreGraphics.framework in Frameworks */,
-				5506EB9A6C29391610ABCE820C109A2D /* Foundation.framework in Frameworks */,
-				DBBA412CE3712F6B19FACC6A308D3350 /* UIKit.framework in Frameworks */,
+				7C538A3015E74162D452AF2D82027E43 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5B6C631ADEECF899D015CBF2C718B9C /* Frameworks */ = {
+		C0B01B0AE18B8E9A869178F6EF274D36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58DB4FFAEDDF5F12B158CB5246F470F1 /* Foundation.framework in Frameworks */,
+				69173BC87268C8316F47C3348AC2890C /* CoreGraphics.framework in Frameworks */,
+				C0EB3C83989A44F8DCBD47B58F95724F /* Foundation.framework in Frameworks */,
+				BAFEF881B40903580086320D0FAD6768 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB9E9D9BBDB93399D3C2B91469EC4B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F85D170E76C661AB0D9E9A8B206C78D /* Foundation.framework in Frameworks */,
+				9A6AE1EF2E94AEB6912BE845583E7D57 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,29 +159,71 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1999C6A794C3854236E4BDB3BFDE9BD7 /* Support Files */ = {
+		2E9F0D1F771950E6663DBEBD8C86BE05 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				09185456BAF6A468359951A0B6C0FDA9 /* RDVTabBarController.xcconfig */,
-				B52E2215A444DC87BFF2A2F3F2906286 /* RDVTabBarController-dummy.m */,
-				E83B9DAAA44349083E91D501E47CDB59 /* RDVTabBarController-prefix.pch */,
+				94F6BDB8B36EC2A3B33DC6576E256B92 /* Masonry.xcconfig */,
+				C4451348932F202411DE896756F0FD54 /* Masonry-dummy.m */,
+				5FD2B095AFA14BA994F08144036E53E7 /* Masonry-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/RDVTabBarController";
+			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
-		2AE894C0A36761313DD2C8D6A0041C7C /* RDVTabBarController */ = {
+		4DDB77C97637D6B3F08359FCC7B4CA5D /* RDVTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				F2BBEF294ACDF52B9B4A372093879C06 /* RDVTabBar.h */,
-				C8DD5A200F3DA0AF36CD0C7E4434D662 /* RDVTabBar.m */,
-				8F2C10AC8F61EABB7FEDA341D1F53A6E /* RDVTabBarController.h */,
-				A6A7358944F8BCCB304F3603C8A7CE54 /* RDVTabBarController.m */,
-				B50856494F960A9466DD4A3A81870645 /* RDVTabBarItem.h */,
-				F786E8CFDB34E00FF371C9F25F65B656 /* RDVTabBarItem.m */,
-				1999C6A794C3854236E4BDB3BFDE9BD7 /* Support Files */,
+				9766618E98271E2BDCB73ED59438312E /* RDVTabBar.h */,
+				2347573B16E1C6CF489292696F8E7F3B /* RDVTabBar.m */,
+				63F3E876E105F15191736E3AE2C1D8C0 /* RDVTabBarController.h */,
+				36EF57677AF16656F33C776A96505162 /* RDVTabBarController.m */,
+				6236F498FDF0C69DC25768BF8D315A2D /* RDVTabBarItem.h */,
+				8F37E4C97D4FFC4102B388232D23C632 /* RDVTabBarItem.m */,
+				CD67EB7BDEB02F810CEA1DE6F4634867 /* Support Files */,
 			);
 			path = RDVTabBarController;
+			sourceTree = "<group>";
+		};
+		56E3A12E3D8AE0EB671A2B93CD9A17D6 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				776BA39D943674FA30F9EFFBC883FED3 /* MASCompositeConstraint.h */,
+				4FC7E9DABD3702D58D136C879DD0A97F /* MASCompositeConstraint.m */,
+				8B9E21FBF3CF707EA17B7AADE50FB656 /* MASConstraint.h */,
+				BD2A7F4709FF6B7B6604B2276B582F65 /* MASConstraint.m */,
+				37C9DE1524F16238E21306A0EBC5E434 /* MASConstraint+Private.h */,
+				91D6D3359EED6F233B378205FF57BA35 /* MASConstraintMaker.h */,
+				A091A38D4284F83760138710247F465D /* MASConstraintMaker.m */,
+				76EA445118B14AD597B8E73E5E17D78B /* MASLayoutConstraint.h */,
+				1C2D3B2ED494419AFDB1F752570CC1AC /* MASLayoutConstraint.m */,
+				E12374A0409194859D568DC47F2CA4CD /* Masonry.h */,
+				32E2EF95009068C24EB486901297A6D1 /* MASUtilities.h */,
+				D1793BE5249830177328F8F4258F357B /* MASViewAttribute.h */,
+				5DA8D96324843C078EC8D982243744AC /* MASViewAttribute.m */,
+				F3989C637C9BD0D8BF0C4E2B1C56CDFE /* MASViewConstraint.h */,
+				05AE69D8B8ADBD75F838BC6619C3BC4C /* MASViewConstraint.m */,
+				548A9D842295131409F192E4753B1DB4 /* NSArray+MASAdditions.h */,
+				1718E2C2EA55808F0F4315049798C5A6 /* NSArray+MASAdditions.m */,
+				3C304E9DACA96A52006F017B82758E42 /* NSArray+MASShorthandAdditions.h */,
+				4CFDA77576917A0C36A1FA1212B87E50 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				3A4D5BBCE8860AB94CEFF4C7FA0A5C7B /* NSLayoutConstraint+MASDebugAdditions.m */,
+				92171F039ED651E35AF1CD5854DBFC5D /* View+MASAdditions.h */,
+				12A19F4F4C0FDAB0FCF99A5070AAC859 /* View+MASAdditions.m */,
+				5E1A18676B5B48FBB5BDC4B26391BD2B /* View+MASShorthandAdditions.h */,
+				C2DE55F139CA58C617E27ABFD8C0EFDF /* ViewController+MASAdditions.h */,
+				7FA64EF740E5072B172CB8E2B16AEBC5 /* ViewController+MASAdditions.m */,
+				2E9F0D1F771950E6663DBEBD8C86BE05 /* Support Files */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		61D696FA594671FEE704B9F0C4B1D2C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56E3A12E3D8AE0EB671A2B93CD9A17D6 /* Masonry */,
+				4DDB77C97637D6B3F08359FCC7B4CA5D /* RDVTabBarController */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		727B9CE56AC2CB0BDF8668F3059814A6 /* Targets Support Files */ = {
@@ -124,27 +239,31 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				B5EE06DF883DF6B9A20F0D866342EFC2 /* Pods */,
-				E1EBB48162F82F43E78E0407DD86B5BA /* Products */,
+				61D696FA594671FEE704B9F0C4B1D2C6 /* Pods */,
+				A6107E230F391F94939868DFC70AE0F5 /* Products */,
 				727B9CE56AC2CB0BDF8668F3059814A6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B5EE06DF883DF6B9A20F0D866342EFC2 /* Pods */ = {
+		A6107E230F391F94939868DFC70AE0F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AE894C0A36761313DD2C8D6A0041C7C /* RDVTabBarController */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E1EBB48162F82F43E78E0407DD86B5BA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				44B27377E5285F6ADEC3B99E41EFB471 /* libPods-MVVMTest.a */,
-				850D0174E5FA8CD20445FA2F4BC15DCC /* libRDVTabBarController.a */,
+				56A4C006B496D44D06FEA39BABB53B8B /* libMasonry.a */,
+				ECC4A3FDDBEA395B0F6C9D74A93E9B57 /* libPods-MVVMTest.a */,
+				679B39DCB039DA2D7DB07F087BFC950C /* libRDVTabBarController.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CD67EB7BDEB02F810CEA1DE6F4634867 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				41A6D2299438FF7ECA479700EF9CF6A4 /* RDVTabBarController.xcconfig */,
+				6714638D4D37027D33897C9ADA497C6A /* RDVTabBarController-dummy.m */,
+				810AE619D9F5A6E1C7B67AE9B9B0EEF1 /* RDVTabBarController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RDVTabBarController";
 			sourceTree = "<group>";
 		};
 		E35B3E289DB984DA75A774080D293670 /* iOS */ = {
@@ -175,43 +294,83 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C550B8BA035A50B6348782DC3A9CD20C /* Headers */ = {
+		657D857047A6A935B5A2E9BD049194F2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D124A7FBD53C6419D531DB5613225AD0 /* RDVTabBar.h in Headers */,
-				9F98CF1005F8B158E0B80BE61F7C1FB9 /* RDVTabBarController.h in Headers */,
-				71FC1C73C68621D73849C3473997FFD5 /* RDVTabBarItem.h in Headers */,
+				99D8C610BC84BE231C5D3D280F3B12AF /* MASCompositeConstraint.h in Headers */,
+				B2B7C90BA9C4DBD9851C75AC801B0E8E /* MASConstraint+Private.h in Headers */,
+				2905381350CEFFBFFA9BC8B5D027F190 /* MASConstraint.h in Headers */,
+				EC6CCC98505D2067BC98B4E6223C9DF8 /* MASConstraintMaker.h in Headers */,
+				C6EE194D232E9FE87097C0F1DF91B9FA /* MASLayoutConstraint.h in Headers */,
+				9205037BA8C22574B33FC96C5EA829A3 /* Masonry.h in Headers */,
+				FF682E8B083BAEBBDF38C52D89D45E37 /* MASUtilities.h in Headers */,
+				3F63C119F95A6735AE627BBB1BEBC4B1 /* MASViewAttribute.h in Headers */,
+				EB02AEF303313F801392DE8D90AFF0F7 /* MASViewConstraint.h in Headers */,
+				FD39EBE3398E1A99965AC003B273450D /* NSArray+MASAdditions.h in Headers */,
+				A7D31BD1F3AD4ED4612467FAD332F388 /* NSArray+MASShorthandAdditions.h in Headers */,
+				2979E54C4AFD27076576E82ADEED2F00 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				DD1F717B0527C71229B3339324E35E55 /* View+MASAdditions.h in Headers */,
+				432BD50F1E699EDF2EA007E850FFCEF7 /* View+MASShorthandAdditions.h in Headers */,
+				331718BFB4A91CFFE026492905231562 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88A5EEDEFE17772107B06AEE094A3A80 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED00CCDF2BF93C8048812BF2AD44326 /* RDVTabBar.h in Headers */,
+				54138CE3E6BF12A77A846E86418E4304 /* RDVTabBarController.h in Headers */,
+				BBBA852FD60431CB19C796D0761ECA8D /* RDVTabBarItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		337317B380D928538304910617A4DDBF /* Pods-MVVMTest */ = {
+		392B0A5CEECBE3AFF9C5916CFE4B5B09 /* Pods-MVVMTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3066F0B850F269EEF627D837A84EF903 /* Build configuration list for PBXNativeTarget "Pods-MVVMTest" */;
+			buildConfigurationList = A2AE2388F2C46607D9E9DE5FB314B2E4 /* Build configuration list for PBXNativeTarget "Pods-MVVMTest" */;
 			buildPhases = (
-				EAF4FF3A3B8D17FDA4674F898CEF2CBA /* Sources */,
-				F5B6C631ADEECF899D015CBF2C718B9C /* Frameworks */,
+				D9407534925A312248DEFEBBAB5D5004 /* Sources */,
+				B20E2EF83B52C76EA583A27C53F2A700 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4B0AC0503E62093DE834865378A73F44 /* PBXTargetDependency */,
+				997FA305714A6365C5582DB4FB36E984 /* PBXTargetDependency */,
+				B80FAC56762BEB9C11B8F96C7D89B8AD /* PBXTargetDependency */,
 			);
 			name = "Pods-MVVMTest";
 			productName = "Pods-MVVMTest";
-			productReference = 44B27377E5285F6ADEC3B99E41EFB471 /* libPods-MVVMTest.a */;
+			productReference = ECC4A3FDDBEA395B0F6C9D74A93E9B57 /* libPods-MVVMTest.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		514E804B80DF0551963F4F603F570365 /* RDVTabBarController */ = {
+		53480ED0BE09FF49E34B1702D485CAAB /* Masonry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A2598D69926A295CA2020CA98866723 /* Build configuration list for PBXNativeTarget "RDVTabBarController" */;
+			buildConfigurationList = B6653DB75D219E078020C341A7D83ECE /* Build configuration list for PBXNativeTarget "Masonry" */;
 			buildPhases = (
-				026620FD6A3E8420478AACCC42D056DA /* Sources */,
-				5E9A5D3341CD3DBD282860A1FC5025B1 /* Frameworks */,
-				C550B8BA035A50B6348782DC3A9CD20C /* Headers */,
+				BF5A9E7C1BAD1634608A9C22251F3B36 /* Sources */,
+				FAB9E9D9BBDB93399D3C2B91469EC4B6 /* Frameworks */,
+				657D857047A6A935B5A2E9BD049194F2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 56A4C006B496D44D06FEA39BABB53B8B /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		839643E5D674BF35D720ACDCBE461FAB /* RDVTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13959A71ABF34C1279C3D113A155DEF /* Build configuration list for PBXNativeTarget "RDVTabBarController" */;
+			buildPhases = (
+				4DD70711FBB4D77AC62CB4ED5598BAE7 /* Sources */,
+				C0B01B0AE18B8E9A869178F6EF274D36 /* Frameworks */,
+				88A5EEDEFE17772107B06AEE094A3A80 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -219,7 +378,7 @@
 			);
 			name = RDVTabBarController;
 			productName = RDVTabBarController;
-			productReference = 850D0174E5FA8CD20445FA2F4BC15DCC /* libRDVTabBarController.a */;
+			productReference = 679B39DCB039DA2D7DB07F087BFC950C /* libRDVTabBarController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -239,67 +398,74 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E1EBB48162F82F43E78E0407DD86B5BA /* Products */;
+			productRefGroup = A6107E230F391F94939868DFC70AE0F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				337317B380D928538304910617A4DDBF /* Pods-MVVMTest */,
-				514E804B80DF0551963F4F603F570365 /* RDVTabBarController */,
+				53480ED0BE09FF49E34B1702D485CAAB /* Masonry */,
+				392B0A5CEECBE3AFF9C5916CFE4B5B09 /* Pods-MVVMTest */,
+				839643E5D674BF35D720ACDCBE461FAB /* RDVTabBarController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		026620FD6A3E8420478AACCC42D056DA /* Sources */ = {
+		4DD70711FBB4D77AC62CB4ED5598BAE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F9F002AC2AFDA6233FA90A8468A83E2 /* RDVTabBar.m in Sources */,
-				185C97741A795C5A9B51F9997F283369 /* RDVTabBarController-dummy.m in Sources */,
-				0DA92CB44F6DC4FC524F8D68B9E188BE /* RDVTabBarController.m in Sources */,
-				781EBA39BC33DE6CEBBA2811A5C31425 /* RDVTabBarItem.m in Sources */,
+				E2E235E76DA27EBBCF4095090A594260 /* RDVTabBar.m in Sources */,
+				83AFFAB667166F839438D0D653B178F3 /* RDVTabBarController-dummy.m in Sources */,
+				0DCEEF3B527B330E09955381459D25F5 /* RDVTabBarController.m in Sources */,
+				7EEF24C78DE27D2300A976773E55F47C /* RDVTabBarItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAF4FF3A3B8D17FDA4674F898CEF2CBA /* Sources */ = {
+		BF5A9E7C1BAD1634608A9C22251F3B36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				618DEF1684C7ACA386B97291869D9FFE /* Pods-MVVMTest-dummy.m in Sources */,
+				F4AA2299205DADFF55B7C602DAF95973 /* MASCompositeConstraint.m in Sources */,
+				1B2F3D8DDFDA028A5FBF9D9571A59F20 /* MASConstraint.m in Sources */,
+				067D10BA1984BA3497E9211A65FC2048 /* MASConstraintMaker.m in Sources */,
+				4FF8E2D1193DD5C5E02861F16802AEBD /* MASLayoutConstraint.m in Sources */,
+				712980BAE00F43D62C7D3B63840D3DF4 /* Masonry-dummy.m in Sources */,
+				635C6117BA4F7576BC19343A7965A8BD /* MASViewAttribute.m in Sources */,
+				71B4B31C29150345DDAEAE1C9CCE8F1E /* MASViewConstraint.m in Sources */,
+				D33286950C9CB1F933C6829BD2638007 /* NSArray+MASAdditions.m in Sources */,
+				3FE106A8255FE6832D30B96EC0466D90 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				6FC6586871A6303509B134E0B50AB287 /* View+MASAdditions.m in Sources */,
+				E0AB941C52556A640214FB7024D47C6F /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9407534925A312248DEFEBBAB5D5004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1747BB149772225E9E80BFF79C552657 /* Pods-MVVMTest-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4B0AC0503E62093DE834865378A73F44 /* PBXTargetDependency */ = {
+		997FA305714A6365C5582DB4FB36E984 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 53480ED0BE09FF49E34B1702D485CAAB /* Masonry */;
+			targetProxy = BE89C767B5B79C1C6B0020CD0A57A13C /* PBXContainerItemProxy */;
+		};
+		B80FAC56762BEB9C11B8F96C7D89B8AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RDVTabBarController;
-			target = 514E804B80DF0551963F4F603F570365 /* RDVTabBarController */;
-			targetProxy = B0D52D080B43E45C9092C939FEE9C778 /* PBXContainerItemProxy */;
+			target = 839643E5D674BF35D720ACDCBE461FAB /* RDVTabBarController */;
+			targetProxy = 4C3C74DBD55D9C52792F66B3446A01D5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		250E6BBCAE7A87D3C9F3AE3C608CDF56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09185456BAF6A468359951A0B6C0FDA9 /* RDVTabBarController.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RDVTabBarController/RDVTabBarController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		2CF971907DA02FEC5B739B5D765BDD44 /* Release */ = {
+		0341F2657B18C693B2FB0591A9B2DFDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7572801201A6255B05EEC7E8C0989B2A /* Pods-MVVMTest.release.xcconfig */;
 			buildSettings = {
@@ -316,12 +482,65 @@
 			};
 			name = Release;
 		};
-		81755EE3ED99B7E7174093310947AFC5 /* Debug */ = {
+		21721CC5BCA5FCD0ABC26BB64CD15268 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09185456BAF6A468359951A0B6C0FDA9 /* RDVTabBarController.xcconfig */;
+			baseConfigurationReference = 41A6D2299438FF7ECA479700EF9CF6A4 /* RDVTabBarController.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/RDVTabBarController/RDVTabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4EEE4DF4BC110E9A00B0DDA1E2C0945D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DDD03B6EFD651A240ED5D701BB6503F /* Pods-MVVMTest.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		757F8CB5DAC3BFACE3AA0A3FCEA9313D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A6D2299438FF7ECA479700EF9CF6A4 /* RDVTabBarController.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RDVTabBarController/RDVTabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		95AE3FB211FA06239C7330FF540873D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F6BDB8B36EC2A3B33DC6576E256B92 /* Masonry.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -373,23 +592,6 @@
 			};
 			name = Debug;
 		};
-		E067F0130B0BEB155E3DF78D3D5AFC14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DDD03B6EFD651A240ED5D701BB6503F /* Pods-MVVMTest.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -424,6 +626,24 @@
 			};
 			name = Release;
 		};
+		FCB543E03B40FD44221FE9A409AE51EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F6BDB8B36EC2A3B33DC6576E256B92 /* Masonry.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -436,20 +656,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3066F0B850F269EEF627D837A84EF903 /* Build configuration list for PBXNativeTarget "Pods-MVVMTest" */ = {
+		A13959A71ABF34C1279C3D113A155DEF /* Build configuration list for PBXNativeTarget "RDVTabBarController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E067F0130B0BEB155E3DF78D3D5AFC14 /* Debug */,
-				2CF971907DA02FEC5B739B5D765BDD44 /* Release */,
+				757F8CB5DAC3BFACE3AA0A3FCEA9313D /* Debug */,
+				21721CC5BCA5FCD0ABC26BB64CD15268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A2598D69926A295CA2020CA98866723 /* Build configuration list for PBXNativeTarget "RDVTabBarController" */ = {
+		A2AE2388F2C46607D9E9DE5FB314B2E4 /* Build configuration list for PBXNativeTarget "Pods-MVVMTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81755EE3ED99B7E7174093310947AFC5 /* Debug */,
-				250E6BBCAE7A87D3C9F3AE3C608CDF56 /* Release */,
+				4EEE4DF4BC110E9A00B0DDA1E2C0945D /* Debug */,
+				0341F2657B18C693B2FB0591A9B2DFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6653DB75D219E078020C341A7D83ECE /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95AE3FB211FA06239C7330FF540873D7 /* Debug */,
+				FCB543E03B40FD44221FE9A409AE51EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

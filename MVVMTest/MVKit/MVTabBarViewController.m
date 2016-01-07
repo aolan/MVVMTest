@@ -48,18 +48,6 @@
     }];
 }
 
-- (BOOL)shouldAutorotate {
-    return self.tabBarController.shouldAutorotate;
-}
-
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return self.tabBarController.supportedInterfaceOrientations;
-}
-
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return self.tabBarController.preferredStatusBarStyle;
-}
-
 #pragma mark - Private Methods
 
 - (void)setupViewControllers{

@@ -25,7 +25,7 @@
     return self;
 }
 
-#pragma mark - Lifycycle Methods
+#pragma mark - Override Methods
 
 + (instancetype)allocWithZone:(struct _NSZone *)zone{
     
@@ -44,10 +44,8 @@
     
     [super viewDidLoad];
     
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    self.extendedLayoutIncludesOpaqueBars = YES;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
