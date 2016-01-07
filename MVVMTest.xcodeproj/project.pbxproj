@@ -247,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				D57DE92C1C3A50CA00A82A0C /* MVKit.h */,
+				D59841271C3E7D4B004CA46B /* Network */,
 				D57DE9241C3A4C8E00A82A0C /* Category */,
 				D57DE9231C3A4C7300A82A0C /* BaseClass */,
 				D57DE91F1C3A2F0600A82A0C /* Macro */,
@@ -325,6 +326,13 @@
 				D5A272111C3E4FC10034A67F /* UIImage+MVExtensions.m */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		D59841271C3E7D4B004CA46B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

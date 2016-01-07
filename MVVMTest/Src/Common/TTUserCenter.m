@@ -23,12 +23,11 @@ static TTUserCenter *shareInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         shareInstance = [[[self class] alloc] init];
+        [shareInstance initProperties];
         [shareInstance listenPropertiesAction];
     });
     return shareInstance;
 }
-
-#pragma mark - Lifycycle Methods
 
 + (instancetype)allocWithZone:(struct _NSZone *)zone{
     
@@ -43,9 +42,17 @@ static TTUserCenter *shareInstance = nil;
 
 #pragma mark - Private Methods
 
+- (void)initProperties{
+    
+    _username = [[NSUserDefaults standardUserDefaults] stringForKey:kTTUserCenter_Username_Key];
+    _mobile = [[NSUserDefaults standardUserDefaults] stringForKey:kTTUserCenter_Mobile_Key];
+    _token = [[NSUserDefaults standardUserDefaults] stringForKey:kTTUserCenter_Token_Key];
+}
+
 - (void)listenPropertiesAction{
     
     [RACObserve(self, username) subscribeNext:^(NSString *username) {
+        NSLog(@"========%@", username);
         [[NSUserDefaults standardUserDefaults] setObject:username forKey:kTTUserCenter_Username_Key];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }];
@@ -60,8 +67,8 @@ static TTUserCenter *shareInstance = nil;
         [[NSUserDefaults standardUserDefaults] synchronize];
     }];
     
-    [RACObserve(self, isLogined) subscribeNext:^(id x) {
-        if (![x boolValue]) {
+    [[self rac_signalForSelector:@selector(isLogined)] subscribeNext:^(id x) {
+        if (!(self.token && self.token.length > 0)) {
             TTLoginViewModel *loginViewModel = [[TTLoginViewModel alloc] initWithTitle:@"登录" parameter:nil];
             [MVPageDispatchService presentViewModel:loginViewModel animated:YES completion:NULL];
         }
@@ -69,18 +76,6 @@ static TTUserCenter *shareInstance = nil;
 }
 
 #pragma mark - Property Methods
-
-- (NSString *)username{
-    return [[NSUserDefaults standardUserDefaults] stringForKey:kTTUserCenter_Username_Key];
-}
-
-- (NSString *)mobile{
-    return [[NSUserDefaults standardUserDefaults] stringForKey:kTTUserCenter_Mobile_Key];
-}
-
-- (NSString *)token{
-    return [[NSUserDefaults standardUserDefaults] stringForKey:kTTUserCenter_Token_Key];
-}
 
 - (BOOL)isLogined{
     return (self.token && self.token.length > 0);

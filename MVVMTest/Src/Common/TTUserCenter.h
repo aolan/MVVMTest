@@ -8,13 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+#define TTIsLogined ([TTUserCenter center].isLogined)
+
 @interface TTUserCenter : NSObject
 
 @property (nonatomic, copy  ) NSString *username;
 @property (nonatomic, copy  ) NSString *mobile;
 @property (nonatomic, copy  ) NSString *token;
-@property (nonatomic, assign, readonly) BOOL isLogined;
 
 + (instancetype)center;
+
+- (BOOL)isLogined;
 
 @end

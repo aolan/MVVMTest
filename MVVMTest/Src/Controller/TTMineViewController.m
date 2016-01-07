@@ -24,9 +24,8 @@
     
     [super viewDidAppear:animated];
     
-    if ([TTUserCenter center].isLogined) {
+    if (TTIsLogined) {
         
-        //code
     }
 }
 

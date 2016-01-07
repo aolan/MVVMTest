@@ -30,6 +30,9 @@
 
     self.loginCommand = [[RACCommand alloc] initWithSignalBlock:^(id sender) {
         NSLog(@"==========登录按钮被点击");
+        [TTUserCenter center].token = @"11";
+        [TTUserCenter center].username = self.username;
+        [TTUserCenter center].mobile = @"123";
         return [RACSignal empty];
     }];
     
